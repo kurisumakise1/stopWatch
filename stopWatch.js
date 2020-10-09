@@ -7,7 +7,7 @@ function StopWatch () {
     let finishingTime = {value : null};
     let durationTime = {value : null};
     this.start = function() {
-        if((a.value)==0) {
+        if((a.value)===0) {
             startingTime.value = new Date();
             ++(a.value);
         }else {
@@ -15,7 +15,7 @@ function StopWatch () {
         }
     }
     this.stop = function() {
-        if((a.value)==1) {
+        if((a.value)===1) {
             finishingTime.value = new Date()
             durationTime.value = ((finishingTime.value-startingTime.value)/1000);
             console.log(durationTime.value);
@@ -25,7 +25,7 @@ function StopWatch () {
         }
     }
     this.duration = function() {
-        if(a.value==0) {
+        if(a.value===0) {
             durationTime.value = ((finishingTime.value.getTime()-startingTime.value.getTime())/1000);
             console.log(durationTime.value);
         }else {
